@@ -1,0 +1,15 @@
+[TIME]:2018-08-22 09:26:39ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/KUAIXUEPHP/Extends/Tool/Test.class.php类未找到
+[TIME]:2018-08-22 09:38:44ERROR : syntax error, unexpected ':', expecting ',' or ';'C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第8行
+[TIME]:2018-08-22 09:39:26ERROR : syntax error, unexpected '}'C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第39行
+[TIME]:2018-08-22 09:39:43ERROR : mysql错误No tables used<br/>SQL: select *
+[TIME]:2018-08-22 09:40:06ERROR : mysql错误   No tables used<br/>SQL: select *
+[TIME]:2018-08-22 10:01:24ERROR : mysql错误   Table 'book.user' doesn't exist<br/>SQL: select * from user
+[TIME]:2018-08-22 10:07:46ERROR : Call to private method Test::show2() from context 'indexController'C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\Index\Controller\IndexController.class.php第10行
+[TIME]:2018-08-22 10:27:34ERROR : syntax error, unexpected '.'C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第33行
+[TIME]:2018-08-22 10:27:55ERROR : mysql错误   You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'frombook' at line 1<br/>SQL: select*frombook
+[TIME]:2018-08-22 10:43:44ERROR : mysql错误   Unknown column 'password' in 'field list'<br/>SQL: select password from book
+[TIME]:2018-08-22 10:44:10ERROR : mysql错误   Table 'book.user' doesn't exist<br/>SQL: select password from user
+[TIME]:2018-08-22 10:48:25ERROR : mysql错误   You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=12345' at line 1<br/>SQL: select password from usersWHERE password=12345
+[TIME]:2018-08-22 10:50:20ERROR : mysql错误   Unknown column 'bob' in 'where clause'<br/>SQL: select password from users WHERE username=bob
+[TIME]:2018-08-22 10:57:05ERROR : Cannot redeclare Model::order()C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第64行
+[TIME]:2018-08-22 10:57:26ERROR : syntax error, unexpected ';'C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第65行
