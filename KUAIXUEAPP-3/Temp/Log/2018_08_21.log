@@ -1,0 +1,9 @@
+[TIME]:2018-08-21 18:27:06ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Index/Controller/1Controller.class.php控制器未找到
+[TIME]:2018-08-21 19:59:13ERROR : syntax error, unexpected '}'C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\Index\Controller\IndexController.class.php第6行
+[TIME]:2018-08-21 21:15:42ERROR : syntax error, unexpected 'publiv' (T_STRING), expecting function (T_FUNCTION)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第6行
+[TIME]:2018-08-21 21:16:07ERROR : syntax error, unexpected 'publiv' (T_STRING), expecting function (T_FUNCTION)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第6行
+[TIME]:2018-08-21 21:16:30ERROR : Can't use function return value in write contextC:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第18行
+[TIME]:2018-08-21 21:17:07ERROR : Can't use function return value in write contextC:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第18行
+[TIME]:2018-08-21 21:17:08ERROR : Can't use function return value in write contextC:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第18行
+[TIME]:2018-08-21 21:17:08ERROR : Can't use function return value in write contextC:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Tool\Model.class.php第18行
+[TIME]:2018-08-21 21:18:38ERROR : 请先配置数据库

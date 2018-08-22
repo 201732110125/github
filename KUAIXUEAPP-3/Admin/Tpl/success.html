@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-http-equiv="Content-Type" content='text/html';charset=UTF-8>
+  <title>操作成功</title>
+  <script type="text/css">
+    *{
+      margin:0px;padding:0px;
+    }
+    ._prompt{
+      width:500px;margin:10px;
+      background-color:#f9f9f9;
+      height:auto;
+      overflow:hidden;
+    }
+    ._prompt h2{
+      height:28px;
+      color:#333;
+      background-color:#FDCE16;
+      font-size:12px;
+      font-weight:normal;
+      text-indent:10px;
+      line-height:30px;
+    }
+    ._prompt div {
+      padding:10px;
+      font-size:12px;
+      color:#333;
+    }
+    ._prompt div a{color :royablue;}
+    ._prompt div p{border-bottom:solid 1px #e9e9e9;
+      padding-bottom:10px;
+      margin-bottom:10px;
+    }
+    #_time{
+      color:#F57E1D;
+      font-size:12px;
+      padding:3px;
+    }
+  </script>
+</head>
+<body>
+<div class="_prompt">
+  <h2>操作成功</h2>
+  <div>
+    <p><?php echo $msg ?>$nbsp$nbsp$nbsp$nbsp</p>
+    <span><span id="_time"><?php echo $time ?></span>
+    秒钟将进行<a  herf="javascript:<?php echo 1url ?>">跳转</a>
+    也可以<a herf:"__ROOT__">返回首页</a>
+  </span>
+  </div>
+</div>
+<script type="text/javascript">
+  var time=document.getElementById('_time').innerHTML;
+  function revTime(){
+    time--;
+    if(time>0){
+      document.getElementById('_time').innerHTML=time;
+    }
+  }
+  // setInterval() 方法可按照指定的周期(以毫秒计)来调用函数或计算表达式
+  setInterval('revTime()',1000);
+</script>
+</body>
+</html>
