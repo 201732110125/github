@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>halt</title>
+</head>
+<body>
+<h1> :( </h1>
+<p>错误信息：<?php echo $e['message']?></p>
+<?php if(DEBUG&&isset($e['file'])):?>
+<hr>
+<p>错误位置:</p>
+<p>FILE: <?php echo $e['file'].'&nbsp&nbsp&nbsp
+  Line:'.$e['line'];?></p>
+<hr>
+<?php endif ?>
+
+<?php if(isset($e['trace'])): ?>
+  <p>Trace: </p>
+  <p><?php echo nl2br($e['trace']);?></p>
+
+<?php endif ?>
+<hr>
+<p>版本信息：<?php echo KUAIXUEAPP_VERSION; ?></p>
+
+</body>
+</html>
