@@ -1,0 +1,138 @@
+[TIME]:2018-08-27 00:27:04ERROR : syntax error, unexpected 'extendsController' (T_STRING), expecting '{'C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\Admin\Controller\IndexController.class.php第6行
+[TIME]:2018-08-27 09:52:40ERROR : Call to undefined method UserModel::validat()C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\Admin\Controller\LoginController.class.php第7行
+[TIME]:2018-08-27 09:54:35ERROR : mysql错误   Table 'kuaixue_blog.kx_use' doesn't exist<br/>SQL: select * from kx_use WHERE username="1" LIMIT 1
+[TIME]:2018-08-27 15:03:15ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/add.html模板文件不存在
+[TIME]:2018-08-27 15:07:15ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/add.html模板文件不存在
+[TIME]:2018-08-27 15:08:09ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/add.html模板文件不存在
+[TIME]:2018-08-27 15:10:11ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/add.html模板文件不存在
+[TIME]:2018-08-27 15:14:42ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/add.html模板文件不存在
+[TIME]:2018-08-27 16:33:27ERROR : syntax error, unexpected '$this' (T_VARIABLE)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\Common\Model\CategoryModel.class.php第13行
+[TIME]:2018-08-27 17:01:05ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 12]: syntax error: invalid attribute name: '=' (Smarty_Compiler.class.php, line 1550)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:01:34ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 12]: syntax error: invalid attribute name: '=' (Smarty_Compiler.class.php, line 1550)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:19:06ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:19:20ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:20:35ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:21:33ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:21:51ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:22:01ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:22:13ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:22:20ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:22:22ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:22:31ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:22:32ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:23:31ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:23:34ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:25:01ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:25:02ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:25:02ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:25:21ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:27:57ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:28:50ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:34:12ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: //     if(confirm(&quot;确认删除吗？&quot;)){
+        //         //弹出选择框，当点击是时，返回true
+        //         //那就跳转到删除操作
+        //         location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:34:13ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: //     if(confirm(&quot;确认删除吗？&quot;)){
+        //         //弹出选择框，当点击是时，返回true
+        //         //那就跳转到删除操作
+        //         location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:34:13ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: //     if(confirm(&quot;确认删除吗？&quot;)){
+        //         //弹出选择框，当点击是时，返回true
+        //         //那就跳转到删除操作
+        //         location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:41:06ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:41:58ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: if(confirm(&quot;确认删除吗？&quot;)){
+                //弹出选择框，当点击是时，返回true
+                //那就跳转到删除操作
+                // location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:42:14ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: //     if(confirm(&quot;确认删除吗？&quot;)){
+        //         //弹出选择框，当点击是时，返回true
+        //         //那就跳转到删除操作
+        //         // location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:42:14ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag: //     if(confirm(&quot;确认删除吗？&quot;)){
+        //         //弹出选择框，当点击是时，返回true
+        //         //那就跳转到删除操作
+        //         // location.href=&quot;{$smarty.const.__APP__ (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:42:56ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html line 25]: syntax error: unrecognized tag:  (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:44:54ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/test.html line 8]: syntax error: unrecognized tag: $(&quot;#sub&quot;).click(function(){
+    			$(&quot;p&quot;).load(&quot;test.txt&quot;,aClick()); (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 17:48:34ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/test.html line 8]: syntax error: unrecognized tag: $(&quot;#sub&quot;).click(function(){
+    			$(&quot;p&quot;).load(&quot;test.txt&quot;,aClick()); (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 18:59:52ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/test.html line 10]: syntax error: unrecognized tag: $(&quot;#sub&quot;).click(function(){
+    			$(&quot;p&quot;).load(&quot;test.txt&quot;,aClick()); (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 18:59:53ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/test.html line 10]: syntax error: unrecognized tag: $(&quot;#sub&quot;).click(function(){
+    			$(&quot;p&quot;).load(&quot;test.txt&quot;,aClick()); (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 19:00:46ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/test.html line 10]: syntax error: unrecognized tag: $(&quot;#sub&quot;).click(function(){
+    			$(&quot;p&quot;).load(&quot;test.txt&quot;,aClick()); (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 19:00:47ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/test.html line 10]: syntax error: unrecognized tag: $(&quot;#sub&quot;).click(function(){
+    			$(&quot;p&quot;).load(&quot;test.txt&quot;,aClick()); (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 19:00:48ERROR : Smarty error: [in C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/test.html line 10]: syntax error: unrecognized tag: $(&quot;#sub&quot;).click(function(){
+    			$(&quot;p&quot;).load(&quot;test.txt&quot;,aClick()); (Smarty_Compiler.class.php, line 441)C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\KUAIXUEPHP\Extends\Org\Smarty\Smarty.class.php第1100行
+[TIME]:2018-08-27 19:10:10ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Controller/EmptyController.class.php控制器未找到
+[TIME]:2018-08-27 19:11:23ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Controller/EmptyController.class.php控制器未找到
+[TIME]:2018-08-27 19:14:49ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Controller/EmptyController.class.php控制器未找到
+[TIME]:2018-08-27 19:16:54ERROR : CategoryController控制器中CategoryController方法不存在！
+[TIME]:2018-08-27 19:18:29ERROR : CategoryController控制器中CategoryController方法不存在！
+[TIME]:2018-08-27 19:19:36ERROR : CategoryController控制器中de方法不存在！
+[TIME]:2018-08-27 19:30:58ERROR : Function name must be a stringC:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\Admin\Controller\CategoryController.class.php第30行
+[TIME]:2018-08-27 19:58:17ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/edit.html模板文件不存在

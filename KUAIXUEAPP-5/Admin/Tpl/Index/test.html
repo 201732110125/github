@@ -1,0 +1,27 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>testLoad</title>
+    	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+    	<script type="text/javascript">
+    	{literal}
+
+    	$(function(){
+    		$("#sub").click(function(){
+    			$("p").load("test.txt",aClick());
+    		});
+    	})
+    	function aClick () {
+    		 window.location = "http://www.baidu.com";
+    	}
+    	{/literal}
+    	</script>
+    </head>
+    <body>
+    	<h2>点击按钮load</h2>
+    	<p>this is paragraph to load</p>
+    	<input type="button" name="sub" value="load" id="sub"></input><br>
+    	<a href="javascript:void(0)" onclick="aClick()">百度</a>
+    </body>
+    </html>

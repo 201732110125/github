@@ -1,0 +1,51 @@
+223
+a:4:{s:8:"template";a:2:{s:68:"C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Category/index.html";b:1;s:21:"../Common/header.html";b:1;}s:9:"timestamp";i:1535371079;s:7:"expires";i:1535371081;s:13:"cache_serials";a:0:{}}<!DOCTYPE html>
+<html lang="en">
+<!-- 专门用来放html的头部文件 -->
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://localhost/kUAIXUEAPP/Admin/Tpl/Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/kUAIXUEAPP/Admin/Tpl/Public/css/index.css">
+    <script type="text/javascript" src="http://localhost/kUAIXUEAPP/Admin/Tpl/Public/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://localhost/kUAIXUEAPP/Admin/Tpl/Public/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="info">
+                    <th>栏目名称</th>
+                    <th width="200">管理操作</th>
+                </tr>
+            </thead>
+                        <tr>
+                <td>娱乐</td>
+                <td>
+                    <!-- 就是通过把栏目的cid给存放到get数组里面，然后跳转到对应的操作，根据传入的值来进行对应的修改操作 -->
+                    <a href="http://localhost/kUAIXUEAPP/admin.php?c=Category&a=edit&cid=2" class="btn btn-success btn-sm">修改</a>
+                    <a href="javascript:;" class="btn btn-danger btn-sm" onclick="cate_del(2)">删除</a>
+                </td>
+
+            </tr>
+                        <tr>
+                <td>跑车</td>
+                <td>
+                    <!-- 就是通过把栏目的cid给存放到get数组里面，然后跳转到对应的操作，根据传入的值来进行对应的修改操作 -->
+                    <a href="http://localhost/kUAIXUEAPP/admin.php?c=Category&a=edit&cid=4" class="btn btn-success btn-sm">修改</a>
+                    <a href="javascript:;" class="btn btn-danger btn-sm" onclick="cate_del(4)">删除</a>
+                </td>
+
+            </tr>
+                    </table>
+    </div>
+    <script type="text/javascript">
+        function cate_del(cid){
+            if(confirm("确认删除吗？")){
+                 location.href="http://localhost/kUAIXUEAPP/admin.php?c=Category&a=del&cid="+cid;
+            }
+        }
+    </script>
+</body>
+
+</html>

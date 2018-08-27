@@ -1,0 +1,3 @@
+[TIME]:2018-08-23 15:49:40ERROR : Call to undefined method indexController::dispaly()C:\phpStudy\PHPTutorial\WWW\KUAIXUEAPP\Admin\Controller\IndexController.class.php第4行
+[TIME]:2018-08-23 15:50:06ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/index.html模板文件不存在
+[TIME]:2018-08-23 18:29:02ERROR : C:/phpStudy/PHPTutorial/WWW/KUAIXUEAPP/Admin/Tpl/Index/index.html模板文件不存在
