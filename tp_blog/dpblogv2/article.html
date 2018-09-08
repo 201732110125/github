@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">梦中程序员</a>
+			</div>
+			<div class="navbar-menu collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">PHP</a></li>
+					<li><a href="#">ThinkPHP</a></li>
+					<li><a href="#">Laravel</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+					<li><a href="#">投稿</a></li>
+				</ul>
+				<form action="#" class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" class="form-control input-sm" id="search" name="search" placeholder="搜索" />
+					</div>
+					<div class="form-group">
+						<button class="btn btn-default btn-sm">搜索</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-8">
+				<h1 class="article-title">数据库学习简单教程（递归的应用）（一）数据库学习简单教程（递归的应用）（一）</h1>
+				<div class="status">25K阅读-35K评论-作者：赏金
+					<span class="label label-default">PHP</span>
+					<span class="label label-default">ThinkPHP</span>
+				</div>
+				<div class="article-content">
+					<blockquote>
+						文章的简要信息
+					</blockquote>
+					我们要在Linux上搭建PHP环境,我们就需要知道我们要安装什么软件，首先需要一个WEB服务器软件，Apache是我们的首选；既然运行PHP，就需要PHP；然后我们还需要一个存放数据的数据库，MySQL、MongoDB、MariaDB都是不错的，这里我们选择使用Mysql；到这里我们确定了我们需要安装的软件，Apache、PHP、MySQL。现在我们在根目录下创建俩个文件夹，分别是dreamphp、softwore，dreamphp是软件的安装目录，softwore是软件的下载目录。相信大家都会使用创建文件夹的命令：mkdir /dreamphp
+
+一、  Apache安装
+我们去Apache的官方网站下载我们需要的Apache版本，目前最新版是2.4.29，我们就下载最新版的，下载地址很多，我们随便选一个：http://mirror.bit.edu.cn/apache//httpd/httpd-2.4.29.tar.gz。
+
+然后看Apache的文档，安装Apache需要6个条件，我们分别列出来。
+
+1)     APR和APR-Util
+
+2)     Pcre
+
+3)     至少50M空间
+
+4)     编译器
+
+5)     服务器时间保持准确
+
+6)     （可选）perl
+
+最后一项是可选，我们就不安装了，至少50M空间，我们的服务器也是满足的，服务器时间准确，也满足，也就是最后只剩下编译器、APR、APR-Util、Pcre这4个即可。编译器我们直接用yum命令进行安装，顺便也把openssl、zlib、bzip2一起安装了。
+
+1.1编译器安装（openssl、zlib、bzip2）
+安装命令：yum install –y gcc gcc-c++ openssl-devel zlib-defel bzip2
+
+1.2APR安装
+1)     进入下载软件的文件夹，就是我们前面创建的softwore，命令：cd /softwore
+
+2)     下载APR，Apache官网提供下载地址，下载命令：wget http://mirrors.tuna.tsinghua.edu.cn/apache//apr/apr-1.6.3.tar.gz
+
+3)     解压APR，命令：tar zxvf apr-1.6.3.tar.gz
+
+4)     进入解压目录，命令：cd apr-1.6.3
+
+5)     配置apr的安装目录，命令：./configure –prefix=/usr/local/apr
+
+6)     编译和安装，命令：make && make install
+
+1.3APR-Util安装
+apr-util不在捆绑expat了，所以我们需要先安装expat。
+
+1.3.1安装expat
+
+1)     进入软件下载文件夹softwore，命令：cd /softwore
+
+2)     下载expat，自行百度地址，下载命令：wget https://jaist.dl.sourceforge.net/project/expat/expat/2.2.5/expat-2.2.5.tar.bz2
+
+3)     解压expat，命令：tar jxf expat-2.2.5.tar.bz2
+
+4)     进入解压目录，命令：tar expat-2.2.5
+
+5)     配置安装目录，命令：./configure –prefix=/usr/local/expat
+
+6)     编译和安装，命令：make && make install
+
+1.3.2安装apr-util
+
+1)     进入下载软件的文件夹softwore，命令cd /softwore
+
+2)     下载APR-Util，Apache官网也有下载地址：下载命令：wget http://mirrors.tuna.tsinghua.edu.cn/apache//apr/apr-util-1.6.1.tar.gz
+
+3)     解压APR-Util，命令：tar zxvf apr-util-1.6.1.tar.gz
+
+4)     进入解压目录，命令：cd /apr-util-1.6.1.tar.gz
+
+5)     配置安装目录，并声明apr和expat的安装目录，命令：./configure –prefix=/usr/local/apr-util –with-apr=/usr/local/apr –with-expat=/usr/local/expat
+
+6)     编译和安装，命令：make && make install
+
+1.4安装pcre
+1)     进入下载软件文件夹softwore，命令：cd /softwore
+
+2)     下载pcre，命令：wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.41.tar.gz
+
+3)     解压pcre，命令：tar zxvf pcre-8.41.tar.gz
+
+4)     进入解压目录，命令：cd pcre-8.41
+
+5)     配置pcre安装目录，命令：./configure –prefix=/usr/local/pcre
+
+6)     编译和安装，命令：make && make install
+
+到这里Apache所需的依赖我们全部安装完了，现在就可以进行Apache的安装了。
+
+1.5安装Apache
+1)     进入下载软件文件夹softwore，命令：cd /softwore
+
+2)     下载Apache，命令：wget http://mirrors.hust.edu.cn/apache//httpd/httpd-2.4.29.tar.gz
+
+3)     解压Apache，命令：tar zxvf httpd-2.4.29.tar.gz
+
+4)     进入解压目录，命令：cd httpd-2.4.29
+
+5)     配置安装目录，并声明apr、apr-util、pcre的安装目录，再静态安装所有模块，命令：./configure –prefix=/dreamphp/apache –with-apr=/usr/local/apr –with-apr-util=/usr/local/apr-util –with-pcre=/usr/local/pcre –enable-mods-shared=all
+
+6)     编译并安装，命令：make && make install
+
+到这里Apache就安装完成了，加入环境变量和配置开机启动，我们这里就不说了，我们就说一下配置Apache文件，启动测试一下。
+
+二、安装PHP
+        PHP会在以后开启很多扩展，这些扩展需要的依赖又非常多，我给大家总结了一下大概的依赖库，大家直接yum安装即可，命令如下：yum -y install gcc gcc-c++ autoconf automake libtool re2c flex bison php-mcrypt libmcrypt libmcrypt-devel openssl-devel libxml2-devel libcurl-devel libjpeg-devel libpng-devel freetype-devel zlib-devel mcrypt bzip2-devel libicu-devel systemd-devel mhash postgresql-devel libxslt libxslt-devel
+现在我们就开始PHP的安装。
+
+1)            进入软件下载目录softwore，命令：cd /softwore
+
+2)            下载PHP，命令：wget http://au2.php.net/distributions/php-7.2.3.tar.gz
+
+3)            解压PHP，命令：tar zxvf php-7.2.3.tar.gz
+
+4)            进入解压目录，命令：cd php-7.2.3
+
+5)       配置PHP安装目录，并动态加载PHP，在安装PHP扩展，命令如下：./configure –prefix=/dreamphp/php –with-apxs2=/dreamphp/apache/bin/apxs –with-curl --with-freetype-dir --with-gd --with-gettext --with-iconv-dir --with-kerberos --with-libdir=lib64 --with-libxml-dir --with-openssl --with-pcre-regex --with-pdo-mysql --with-pear --with-png-dir --with-xmlrpc --with-xsl --with-zlib --with-mhash --enable-fpm --enable-bcmath --enable-libxml --enable-inline-optimization --enable-gd-native-ttf --enable-mbregex --enable-mbstring --enable-opcache --enable-pcntl --enable-shmop --enable-soap --enable-sockets --enable-sysvsem --enable-xml --enable-zip --enable-mysqlnd
+6)            编译并安装，命令：make && make install
+
+经过漫长的等待，就会安装完成，自己需要安装哪些扩展或者开启哪些扩展自行配置。安装完成以后会提示我们将php.ini复制到我们的PHP安装目录，自行复制即可。
+
+7)            让apache支持PHP，搜索mime_module,大概在380行到427行都是这个配置。
+
+8)            将PHP加入环境变量自行设置
+
+到这里PHP就安装完成了。
+
+三、安装MySQL
+      MySQL的需要numactl，当然你的机器可能装了这个依赖，没有装的执行以下yum安装命令：yum install –y numactl
+
+开始安装MySQL：
+
+1)     进入软件安装目录softwore，命令：cd /softwore
+
+2)     下载MySQL，命令：wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.21-linux-glibc2.12-x86_64.tar.gz
+
+3)     解压MySQL，命令：tar zxvf mysql-5.7.21-linux-glibc2.12-x86_64.tar.gz
+
+4)     修改解压文件名字为mysql，命令：mv mysqll-5.7.21-linux-glibc2.12-x86_64.tar.gz mysql
+
+5)     移动或者复制mysql到/dreamphp下面，命令：mv mysql /dreamphp/mysql
+
+6)     创建一个mysql的用户和用户组，命令：groupadd mysql;useradd –g –r mysql mysql
+
+7)     修改mysql文件夹的所属，命令：chown –R mysql:mysql /dreamphp/mysql
+
+8)     执行初始化命令，命令：./mysqld –initialize –user=mysql –basedir=/dreamphp/mysql –datadir=/dreamphp/mysql/data
+
+9)     初始化完成会生成一个初始化密码，记住次密码，待会修改成自己希望的密码
+
+10)  下面也是一样，设置环境变量，设置开机启动什么的，自行百度。
+
+ 
+
+到这里Linux下PHP环境就完全搭建好了，步骤详细无比了，相信是个新手都可以自信配置环境了。
+
+PHP拜师QQ；305530751
+				</div>
+				<div class="article-comment">
+					<div class="page-header"><b>相关评论</b></div>
+					<div class="comment-content">
+						<form action="#">
+							<div class="form-group">
+								<textarea class="form-control" id="comment" name="comment" rows="5" cols=""></textarea>
+							</div>
+							<div class="form-group pull-right">
+								<button class="btn btn-primary">评论（请认真评论）</button>
+							</div>
+						</form>
+					</div>
+					<div class="clearfix"></div>
+					<div class="comment-list">
+						<div class="comment-list-item">
+							<div class="info">赏金<small>2018-11-11 23:28:22</small></div>
+							<div class="content">这篇文章真的不错！</div>
+						</div>
+					</div>
+					<div class="comment-list">
+						<div class="comment-list-item">
+							<div class="info">赏金<small>2018-11-11 23:28:22</small></div>
+							<div class="content">这篇文章真的不错！</div>
+						</div>
+					</div>
+					<div class="comment-list">
+						<div class="comment-list-item">
+							<div class="info">赏金<small>2018-11-11 23:28:22</small></div>
+							<div class="content">这篇文章真的不错！</div>
+						</div>
+					</div>
+					<div class="comment-list">
+						<div class="comment-list-item">
+							<div class="info">赏金<small>2018-11-11 23:28:22</small></div>
+							<div class="content">这篇文章真的不错！</div>
+						</div>
+					</div>
+					<div class="comment-list">
+						<div class="comment-list-item">
+							<div class="info">赏金<small>2018-11-11 23:28:22</small></div>
+							<div class="content">这篇文章真的不错！</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="affix">
+					<div class="page-header h3">推荐文章</div>
+					<div class="topic-list">
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+						<div class="topic-list-item">
+							<a href="#" class="title">数据库学习简单教程（递归的应用）（一）</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>Copyright 2018 <a href="#">www.dreamphp.com.cn</a> All Rights Reserved</p>
+	</div>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>梦中程序员管理后台--QQ:305530751</title>
+    <link rel="shortcut icon" href="/static/admin/img/logo.jpg" type="image/x-icon">
+    <link href="/static/admin/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/admin/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/static/admin/css/weather-icons.min.css" rel="stylesheet"/>
+    <link id="beyond-link" href="/static/admin/css/beyond.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="login-container">
+    <div class="loginbox bg-white">
+        <form  method="">
+            <div class="loginbox-title">登录</div>
+
+            <div class="loginbox-or">
+                <div class="or-line"></div>
+            </div>
+            <div class="loginbox-textbox">
+                <input type="text" class="form-control"  name="username" placeholder="用户名"/>
+            </div>
+            <div class="loginbox-textbox">
+                <input type="password" class="form-control" name="password" placeholder="密码"/>
+            </div>
+            <div class="loginbox-forgot">
+                <a href="">忘记密码?</a>
+            </div>
+            <div class="loginbox-submit">
+                <input type="button" class="btn btn-primary btn-block" id="login" value="登陆">
+            </div>
+            <div class="loginbox-signup">
+                <a href="{:url('admin/index/register')}">注册账户</a>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/static/admin/js/skins.js"></script>
+<!--Basic Scripts-->
+<script src="/static/admin/js/jquery.min.js"></script>
+<script src="/static/admin/js/bootstrap.min.js"></script>
+<script src="/static/admin/js/slimscroll/jquery.slimscroll.min.js"></script>
+<!--Beyond Scripts-->
+<script src="/static/admin/js/beyond.js"></script>
+<script src="/static/lib/layer/layer.js"></script>
+<script>
+    $(window).bind("load", function () {
+
+        /*Sets Themed Colors Based on Themes*/
+        themeprimary = getThemeColorFromCss('themeprimary');
+        themesecondary = getThemeColorFromCss('themesecondary');
+        themethirdcolor = getThemeColorFromCss('themethirdcolor');
+        themefourthcolor = getThemeColorFromCss('themefourthcolor');
+        themefifthcolor = getThemeColorFromCss('themefifthcolor');
+
+    });
+    $(function(){
+        $("#login").click(function(){
+            //用ajax请求传递数据
+            $.ajax({
+                url:"{:url('admin/index/login')}",
+            type:'post',
+                data:$("form").serialize(),
+                dataType:'json',
+                success:function(data){//收到admin/index/login所返回的json数据，就是success()和error()方法返回的
+                    if(data.code==1){//在Model类的error()和success()方法中，error()的code=0，success()的code=1
+                        layer.msg(data.msg,{
+                            icon:6,
+                            time:2000,
+                        },function(){
+                            location.href=data.url;
+                        })
+                    }else{
+                        layer.open({
+                            title:"登陆失败",
+                            content:data.msg,
+                            icon:5,
+                            anim:6,
+                        })
+                    }
+                }
+            })
+            return false;
+        })
+
+        // $("#login").click(function(){
+        //     $.ajax({
+        //         type:"post",
+        //         url:"{:url('admin/index/login')}",
+        //         data:$("form").serialize(),//这里data传递过去的是序列化以后的字符串
+        //         dataType:'json',
+        //         success:function(data){
+        //             console.log(data);//获取成功以后输出返回值
+        //         }
+        //     });
+        //     return false;
+        // })
+    })
+</script>
+<!--//表单序列化-->
+<!--//这个data就是控制器中login方法返回的数据-->
+<!--//包含success()的返回或者error()的返回-->
+<!--//因为是ajax请求，所以返回的数据都被转换成json格式了-->
+<!--//返回数据类型json-->
+
+</body>
+<!--  /Body -->
+</html>
